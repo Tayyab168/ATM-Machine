@@ -1,0 +1,59 @@
+body{
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #241989;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.container input{
+padding:.5rem;
+margin: 1rem;
+width: 15rem;
+text-align: center;
+border: 4px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 1rem;
+}
+
+/* log in button */
+
+.btn {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 2px 2px 6px #c5c5c5,
+                -2px -2px 6px #ffffff;
+   }
+   
+   .btn::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    width: 9em;
+   }
